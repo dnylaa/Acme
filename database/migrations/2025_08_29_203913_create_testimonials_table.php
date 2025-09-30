@@ -20,7 +20,7 @@ return new class extends Migration
 
             $table->string('name'); // nama pemberi testimoni (jaga-jaga kalau bukan user login)
             $table->text('message'); // isi testimoni
-            $table->enum('status', [ 'approved', 'rejected'])->default('pending'); // moderasi
+            $table->enum('status', ['approved', 'rejected'])->default('approved'); // moderasi
 
             $table->timestamps();
         });

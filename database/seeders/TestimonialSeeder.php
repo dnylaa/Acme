@@ -28,7 +28,7 @@ class TestimonialSeeder extends Seeder
                     'product_id' => $product->id,
                     'name' => $user->name,
                     'message' => "Saya suka produk {$product->title}, kualitasnya bagus dan sangat bermanfaat!",
-                    'photo' => null, // kalau ada bisa pakai avatar default
+                    // 'photo' => null, // kalau ada bisa pakai avatar default
                     'status' => 'approved', // biar langsung muncul di frontend
                 ]);
             }
