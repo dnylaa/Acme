@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
- f                                                                                                                 
+                                                                                                               
             // relasi opsional: testimoni biasanya terkait produk & user
-            $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null');
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
             $table->foreignId('product_id')->nullable()->constrained()->onDelete('cascade');
 
             $table->string('name'); // nama pemberi testimoni (jaga-jaga kalau bukan user login)
