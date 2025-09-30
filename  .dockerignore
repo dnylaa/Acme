@@ -1,0 +1,8 @@
+# .dockerignore di root proyek Laravel Anda
+.git
+.gitignore
+.env
+vendor/
+node_modules/
+.vscode/
+docker/ # Jangan salin folder docker ke dalam image itu sendiri
